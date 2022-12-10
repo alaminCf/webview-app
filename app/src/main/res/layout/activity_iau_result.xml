@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/reload"
+    tools:context=".Iau_Result">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animate"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            app:lottie_url="https://assets6.lottiefiles.com/packages/lf20_x62chJ.json"
+            app:lottie_autoPlay="true"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            app:lottie_loop="true"/>
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Print and Download"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|end"
+            android:visibility="gone"
+            android:layout_margin="15dp"/>
+
+        <ProgressBar
+            android:layout_marginTop="150dp"
+            android:id="@+id/progresbar"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

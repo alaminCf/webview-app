@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#055756"
+    android:orientation="vertical"
+    tools:context=".birth.Birth">
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:background="@drawable/topbar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="প্রয়োজনীয় সকল ওয়েবসাইট একত্রে"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="end"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="55dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="জন্ম নিবন্ধন..."
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="7dp"/>
+
+    <View
+        android:layout_width="180dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <soup.neumorphism.NeumorphCardView
+                android:foreground="?attr/actionBarItemBackground"
+                android:clickable="true"
+                android:id="@+id/birth_new_reg"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="@color/purple_700"
+                app:neumorph_shadowColorDark="@color/teal_200"
+                app:neumorph_shadowColorLight="@color/black"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shapeType="basin">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/bth" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="নতুন জন্ম নিবন্ধনের জন্য আবেদন"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="45dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:textColor="@color/white"/>
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/birth_search"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="@color/purple_700"
+                app:neumorph_shadowColorDark="@color/teal_200"
+                app:neumorph_shadowColorLight="@color/black"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shapeType="basin">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/bth" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জন্ম নিবন্ধন তথ্য অনুসন্ধান"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:textColor="@color/white"/>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/birth_currection"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="@color/purple_700"
+                app:neumorph_shadowColorDark="@color/teal_200"
+                app:neumorph_shadowColorLight="@color/black"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shapeType="basin">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/bth" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জন্ম নিবন্ধন তথ্য সংশোধন আবেদন"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="45dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:textColor="@color/white"/>
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/birth_current_status"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="@color/purple_700"
+                app:neumorph_shadowColorDark="@color/teal_200"
+                app:neumorph_shadowColorLight="@color/black"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shapeType="basin">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/bth" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জন্ম নিবন্ধন আবেদনের বর্তমান অবস্থা"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="45dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:textColor="@color/white"/>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/birth_print"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="@color/purple_700"
+                app:neumorph_shadowColorDark="@color/teal_200"
+                app:neumorph_shadowColorLight="@color/black"
+                app:neumorph_shadowElevation="2dp"
+                app:neumorph_shapeType="basin">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/bth" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জন্ম নিবন্ধন আবেদন পত্র প্রিন্ট"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:textColor="@color/white"/>
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
